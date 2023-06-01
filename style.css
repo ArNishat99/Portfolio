@@ -323,7 +323,7 @@ nav .fa-sharp{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/mobiilebackground.jpg);
+        background-image: url(images/newbg-100.jpg);
     }
     .header-text{
         margin-top: 100%;
