@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8cacac059c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Robotics Enthusiast</p>
+                    <h2>Hi, I'm</h2>
+                    <h1>Arafath Rahman <span>Nishat</span></h1>
+                    <h3>An Undergraduate Student at</h3>
+                    <h4>Bangladesh University of Engineering and Technology (BUET)</h4>
+                </div>
+            </div>
+        </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="bio">I am an undergraduate student at Bangladesh University of Engineering and Technology, 
+                        undertaking Mechanical Engineering major. I have interest in Robotics, specially 
+                        Microcontroller based autonomous or semi-autonomous  system, Electromechanical system, 
+                        Graphics Design and CAD Design. I have practice with different coding languages; like C, C++, Python. 
+                        I am an active member of Electrical Sub-team at "Team Interplanetar - BUET Mars Rover Team". 
+                        Looking forward to working with development of Electromechanical system.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Accomplished Courses')">Accomplished Courses</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li><span>Undergraduation in Mechanical Engineering</span><br>2022 - Current <br> From Bangladesh University of Engineering and Technology (BUET)</li>
+                            <li><span>HSC </span><br>2019-2020 <br> From Comilla Victoria Government College</li>
+                            <li><span>SSC </span><br>2017-2018 <br> From IBNE Taimiya School and College</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Accomplished Courses">
+                        <ul>
+                            <li><span>Solidworks Associate - Mechanical Design</span><br>from Dassault Systems</li>
+                            <li><span>An Introduction to Programming the Internet of Things Specialization</span><br>from Coursera <br> 33.33% Completed</li>
+                            <li><span>Robotics Specialization</span><br>from Coursera <br>16.67% Completed</li>
+                            <li><span>MATLAB Programming for Engineers and Scientists Specialization</span><br>from Coursera <br>33.33% Completed</li>
+                            <li><span>Matlab Onamp</span><br>from MathWorks</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Printed Circuit Board Design</span><br> around one year experience</li>
+                            <li><span>CAD Design</span><br> around 9 months experience</li>
+                            <li><span>Graphics Design</span><br> around 9 months experience</li>
+                            <li><span>Projects with Arduino and ESP</span><br>about 2 years experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <center>
+                    <h2>3D CAD Design</h2>
+                    <img src="images/SW_logo.png" width="80px">
+                    <p>Solidworks</p>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                    <h2>PCB Design</h2>
+                    <img src="images/altium_logo.png" width="80px">
+                    <p>Altium</p>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                    <h2>Robotics</h2>
+                    <img src="images/Arduino_logo.jpg" width="80px">
+                    <p>Arduino</p>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                    <h2>Web Development</h2>
+                    <img src="images/HTML_LOGO.png" width="80px">
+                    <img src="images/CSS_LOGO.png" width="80px">
+                    <p>HTML, CSS</p>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                    <h2>Coding</h2>
+                    <img src="images/Matlab_logo.png" width="80px">
+                    <img src="images/Python-logo-notext.svg.png" width="80px">
+                    <img src="images/C_Logo.png" width="80px">
+                    <img src="images/ISO_C++_Logo.svg.png" width="80px">
+                    <p>Matlab, Python, C, C++</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Work-3.jpg">
+                    <div class="layer">
+                        <h3>Phonix v1.0</h3>
+                        <p>Phonix v1.0 is a bluetooth control car. I had made it to participate in the "Speed Racing" competition of my university. 
+                            It is mainly an arduino based project. It's unique chassis design enables it to operate in both normal and upside down 
+                            position. Speed and Direction of wheel rotation can be controlled by a android app, which is also designed by me.</p>
+                        <a href="https://www.instructables.com/Phonix-V10-A-Bluetooth-Controlled-Car/"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Work-2.jpg">
+                    <div class="layer">
+                        <h3>Anisha v1.0</h3>
+                        <p>Anisha v1.0 is a "Virtual Assistant". I created it with the help of Python. It can recognize human voices and vocally interact with its user. 
+                            It can greet you according to date and time. It can play music randomly or according to your choice, send mail, search in Wikipedia, introduce 
+                            itself, open any application,type on a word file, tell time and date, and provide full weather updates or any individual query for any region 
+                            of the world. It can be fully controlled with voice commands.
+                        </p>
+                        <a href="https://www.facebook.com/100041865654342/videos/735734747404046/"><i class="fa-solid fa-video"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Work-1.jpg">
+                    <div class="layer">
+                        <h3>Mogo v1.0</h3>
+                        <p>Mogo v1.0 is an autonomous robo-car. It has two modes: "Obstacle Avoiding" and "Human Following". It uses a sonar sensor while operating in 
+                            Obstacle Avoiding Mode, and IR sensors while operating in Human Following Mode. It uses an Arduino uno as the main microcontroller.</p>
+                        <a href="https://www.facebook.com/100041865654342/videos/371216191128695/"><i class="fa-solid fa-video"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a hre="#" class="btn">See more</a>
+           
+            </div>
+
+        </div>
+    </div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> arnishat100@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 01822372677</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/arafath.nishat.3"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/nishat_.__"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/arafath-rahman-nishat"><i class="fa-brands fa-linkedin"></i></a>    
+                </div>
+                <a href="images/CV.pdf" download class="btn btn2"> Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copywrite">
+        <p>Copyright © Arafath Rahman Nishat.</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>  
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0"
+    }
+    function closemenu(){
+        sidemenu.style.right="-150px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz567JTCV8ET3gjqsfXoUImy08WQwEQ7uruj5m3taO0BL9HWguos-yPb4wlHgRzMp26iA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
