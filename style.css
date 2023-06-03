@@ -434,6 +434,16 @@ nav .fa-sharp{
     .tab-contents ul li span{
         font-size: 12px;
     }
+    .subtab-links{
+        font-size: 11px;
+        margin-right: 17px;
+    }
+    .subtab-contents ul li{
+        font-size: 10px;
+    }
+    .subtab-contents ul li span{
+        font-size: 12px;
+    }
     .layer{
         font-size: 10;
         padding: 0 10px;
