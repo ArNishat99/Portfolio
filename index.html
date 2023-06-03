@@ -59,13 +59,29 @@
                         </ul>
                     </div>
                     <div class="tab-contents" id="Accomplished Courses">
-                        <ul>
-                            <li><span>Solidworks Associate - Mechanical Design</span><br>from Dassault Systems</li>
-                            <li><span>An Introduction to Programming the Internet of Things Specialization</span><br>from Coursera <br> 33.33% Completed</li>
-                            <li><span>Robotics Specialization</span><br>from Coursera <br>16.67% Completed</li>
-                            <li><span>MATLAB Programming for Engineers and Scientists Specialization</span><br>from Coursera <br>33.33% Completed</li>
+                        <div class="subtab-titles">
+                            <p class="subtab-links active-link" onclick="opensubtab('CAD Design')"> CAD Design </p>
+                            <p class="subtab-links" onclick="opensubtab('Robotics')"> Robotics </p>
+                            <p class="subtab-links" onclick="opensubtab('Matlab')"> Matlab </p>
+                        </div>
+                        <div class="subtab-contents active-tab" id="CAD Design">
+                            <ul>
+                                <li><span>Solidworks Associate - Mechanical Design</span><br>from Dassault Systems</li>
+                            </ul>
+                        </div>
+                        <div class="subtab-contents" id="Robotics">
+                            <ul>
+                                <li><span>An Introduction to Programming the Internet of Things Specialization</span><br>from Coursera <br> 33.33% Completed</li>
+                                <li><span>Robotics Specialization</span><br>from Coursera <br>16.67% Completed</li>
+                            </ul>
+                        </div>
+                        <div class="subtab-contents" id="Matlab">
+                            <ul>
+                                <li><span>MATLAB Programming for Engineers and Scientists Specialization</span><br>from Coursera <br>33.33% Completed</li>
                             <li><span>Matlab Onamp</span><br>from MathWorks</li>
-                        </ul>
+                            </ul>
+                        </div>
+                        
                     </div>
                     <div class="tab-contents" id="Experience">
                         <ul>
@@ -210,6 +226,21 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+</script> 
+<script>
+    var subtablinks = document.getElementsByClassName("subtab-links");
+    var subtabcontents = document.getElementsByClassName("subtab-contents");
+
+    function opensubtab(subtabname){
+        for(subtablink of subtablinks){
+            subtablink.classList.remove("active-link");
+        }
+        for(subtabcontent of subtabcontents){
+            subtabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(subtabname).classList.add("active-tab");
     }
 </script>  
 
