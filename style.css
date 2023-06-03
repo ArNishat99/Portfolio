@@ -150,11 +150,6 @@ nav ul li a:hover::after{
 }
 
 
-
-
-
-
-
 .subtab-titles{
     display: flex;
     margin: 30px 0 30px;
@@ -426,7 +421,7 @@ nav .fa-sharp{
     }
     .tab-links{
         font-size: 13px;
-        margin-right: 20px;
+        margin: 0 15px;
     }
     .tab-contents ul li{
         font-size: 10px;
