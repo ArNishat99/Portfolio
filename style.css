@@ -149,6 +149,52 @@ nav ul li a:hover::after{
     display: block;
 }
 
+
+
+
+
+
+
+.subtab-titles{
+    display: flex;
+    margin: 30px 0 30px;
+}
+.subtab-links{
+    margin: 0 50px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.subtab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #e55959;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+.subtab-links.active-link::after{
+    width: 100%;
+}
+.subtab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 12px;
+}
+.subtab-contents ul li span{
+    color: #e95e5e;
+    font-size: 17px;
+}
+.subtab-contents{
+    display: none;
+}
+.subtab-contents.active-tab{
+    display: block;
+}
+
 #skills{
     padding: 50px 0;
 }
