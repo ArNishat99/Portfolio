@@ -18,7 +18,16 @@ body{
     background-size: cover;
     background-position: center;
 }
+#header2{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
 .container{
+    padding: 25px 5%;
+
+}
+.container2{
     padding: 25px 5%;
 
 }
@@ -102,6 +111,11 @@ nav ul li a:hover::after{
 }
 .sub-title{
     font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+.sub-title2{
+    font-size: 40px;
     font-weight: 600;
     color: white;
 }
@@ -261,6 +275,9 @@ nav ul li a:hover::after{
     margin-bottom: 15px;
     font-size: 15px;
 }
+
+
+
 .layer a{
     margin-top: 20px;
     color:#ed1c24;
@@ -273,6 +290,21 @@ nav ul li a:hover::after{
     border-radius: 50%;
     text-align: center;
 }
+
+.two_icon a{
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-right: 15px;
+    color:#ed1c24;
+    background: #fff;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+}
+
 .work:hover img{
     transform: scale(1.1);
 }
