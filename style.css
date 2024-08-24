@@ -63,7 +63,7 @@ body{
 }
 
 nav{
-    padding: 12px 2%;
+    padding: 12px 1%;
     display: flex;
     align-items:right;
     justify-content: space-between;
@@ -585,6 +585,9 @@ nav .fa-sharp{
     }
     .header-text h4{
         font-size: 12px;
+    }
+    nav{
+        padding: 12px 10%;
     }
     nav .fa-sharp{
         display: block;
