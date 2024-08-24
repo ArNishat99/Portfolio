@@ -588,6 +588,7 @@ nav .fa-sharp{
     }
     nav{
         padding: 12px 6%;
+        background: #08080800;
     }
     nav .fa-sharp{
         display: block;
