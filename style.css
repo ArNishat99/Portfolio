@@ -400,6 +400,8 @@ nav ul li a:hover::after{
     padding: 60px 0;
 }
 .work-list{
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 40px;
