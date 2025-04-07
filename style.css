@@ -248,6 +248,19 @@ nav ul li a:hover::after{
 .subtab-contents.active-tab{
     display: block;
 }
+.experience-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.experience-columns ul {
+    flex: 1;
+    min-width: 200px;
+    padding: 0;
+}
+
 
 #skills{
     padding: 60px 0;
