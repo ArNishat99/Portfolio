@@ -56,19 +56,31 @@ body{
     background-size: cover;
     background-position: center;
 }
+.btn.cvbtn{
+    display: inline-block;
+    padding: 10px 32px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #ed1c24;
+    border-radius: 18px;
+}
 #header2{
     width: 100%;
     background-size: cover;
     background-position: center;
 }
+
 .container{
     padding: 20px 5%;
+
 }
 
 .container2{
     padding: 25px 5%;
 
 }
+
 
 nav{
     padding: 12px 1%;
@@ -112,6 +124,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+
 .header-text{
     margin-top: 9%;
     font-size: 17.5px;
@@ -135,6 +148,7 @@ nav ul li a:hover::after{
     font-size: 17px;
     margin-top: 15px;
 }
+
 
 
 #about{
@@ -270,32 +284,148 @@ nav ul li a:hover::after{
 }
 
 
-#skills{
+#skills {
     padding: 60px 0;
 }
-.skills-list{
+
+.skills-list {
+    padding: 40px 0 0 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
 }
-.skills-list div{
+
+.skills-list.row-2 {
+    padding: 10px 0 0 0;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1050px;
+    margin: 10px auto 0;
+}
+
+.skill-card {
     background: #262626;
-    padding: 40px;
-    font-size: 20px;
-    font-weight: 500;
     border-radius: 20px;
-    transition: background 0.5s, transform 0.5s;
+    padding: 25px 18px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(212, 193, 193, 0.1);
 }
-.skills-list h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-.skills-list div:hover{
-    background: #565353;
+
+.skill-card:hover {
     transform: translateY(-10px);
 }
+
+.skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.skill-card:hover::before {
+    transform: translateX(100%);
+}
+
+.skills-list h2 {
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.circular-progress {
+    width: 90px;
+    height: 90px;
+    position: relative;
+}
+
+.circular-progress svg {
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+}
+
+.progress-bg {
+    fill: none;
+    stroke: #1a0505;
+    stroke-width: 4;
+}
+
+.progress-bar {
+    fill: none;
+    stroke: #ed1c24;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-dasharray: 251.2;
+    stroke-dashoffset: 251.2;
+    transition: stroke-dashoffset 1.5s ease-in-out;
+}
+
+.skill-card.animate .progress-bar {
+    stroke-dashoffset: 0;
+}
+
+.logo-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.logo-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skills-list.row-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-list,
+    .skills-list.row-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 #award{
     padding: 80px 0;
@@ -423,8 +553,8 @@ nav ul li a:hover::after{
 }
 .research-list{
     display: grid;
-    grid-template-columns: 50% ;
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 20px;
     margin-top: 50px;
 
 }
@@ -434,24 +564,48 @@ nav ul li a:hover::after{
     border-radius: 20px;
 }
 .research-list h3{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 15px;
 }
 .research-list h5{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     font-style: italic;
     margin-top: 15px;
 }
 .research-list p{
-    font-size: 16px;
+    font-size: 12px;
     font-style: italic;
     margin-top: 8px;
 }
 
 #scholarship{
     padding: 60px 0;
+}
+.scholarship-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 20px;
+    margin-top: 50px;
+
+}
+.scholarship-list div{
+    background: #262626;
+    padding: 30px;
+    border-radius: 20px;
+}
+.scholarship-list h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.scholarship-list p{
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 8px;
+    text-align: justify;
 }
 
 #projects{
@@ -548,8 +702,8 @@ nav ul li a:hover::after{
     margin: 50px auto;
     width: fit-content;
     border: 1px solid #ed1c24;
-    padding: 14px 50px;
-    border-radius: 6px;
+    padding: 14px 20px;
+    border-radius: 18px;
     text-decoration: none;
     color: #fff;
     transition: background 0.3s;
@@ -592,39 +746,8 @@ nav ul li a:hover::after{
     color: #ed1c24;
     transform: translateY(-5px);
 }
-.btn.btn2{
-    display: inline-block;
-    background: #ed1c24;
-}
 
-.contact-right form{
-    width: 100%;
-}
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-form .btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-.copywrite{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin: 20px 0;
-}
+
 
 nav .fa-sharp{
     display: none;
