@@ -556,10 +556,9 @@ nav ul li a:hover::after{
 }
 .research-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 45px;
     margin-top: 50px;
-    grid-template-columns: repeat(4, 1fr);
 }
 .research{
     border-radius: 15px;
@@ -901,4 +900,33 @@ nav .fa-sharp{
     color:#61b752;
     margin-top: -40px;
     display: block;
+}
+
+/* ===== Responsive card grids (desktop keeps 4 columns) ===== */
+@media (max-width: 992px){
+    .research-list,
+    .work-list,
+    .cer-list,
+    .aw-list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+}
+@media (max-width: 768px){
+    .research-list{
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+}
+@media (max-width: 600px){
+    .work-list,
+    .cer-list,
+    .aw-list{
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+    .cer,
+    .aw{
+        padding: 20px 0;
+    }
 }
